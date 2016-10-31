@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "Apr.h"
-//Coded by SexClub
+//Coded by ali
 
 const BYTE sendKey[16] = {0x32,0x4E,0xAA,0x58,0xBC,0xB3,0xAE,0xE3,0x6B,0xC7,0x4C,0x56,0x36,0x47,0x34,0xF2};
 const BYTE recvKey[16] = {0x87,0x1F,0xE5,0x23,0x78,0xA1,0x88,0xAD,0x22,0xCF,0x5E,0xAA,0x5B,0x18,0x1E,0x67};
@@ -789,7 +789,7 @@ void CApr::Cryption(BYTE* packet,int & len,bool flag,BYTE* out)
     }
 	memcpy(out,outpacket,len);
 	free(outpacket);
-	// þifreli paketin 0x10 bytený alýp xorkey yaptýktan sonra tmp dediðim yere kopyalýyor sonra öteki bytelarý çözüyor
+	// Ã¾ifreli paketin 0x10 bytenÃ½ alÃ½p xorkey yaptÃ½ktan sonra tmp dediÃ°im yere kopyalÃ½yor sonra Ã¶teki bytelarÃ½ Ã§Ã¶zÃ¼yor
 }
 void CApr::passEncrypt(const char* pass,char* buffer)
 {
